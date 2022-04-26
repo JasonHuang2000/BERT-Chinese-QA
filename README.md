@@ -59,7 +59,7 @@ For inference, a file `test.json` should be provided, and will only contains que
 
 ## Training
 
-There are two phases of the task, **context selection** and **question answering**. Two phase need to be trained seperately.
+There are two phases of the task, **context selection** and **question answering**. Two phases need to be trained seperately.
 
 ### Context Selection
 
