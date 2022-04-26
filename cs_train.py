@@ -32,21 +32,25 @@ def main():
     set_seed(training_args.seed)
 
     # pretrained model and tokenizer
-    model = AutoModelForMultipleChoice.from_pretrained(
-        model_args.ckpt_path if model_args.ckpt_path else model_args.pretrained_name
-    )
+    model = AutoModelForMultipleChoice.from_pretrained(model_args.pretrained_name)
     tokenizer = AutoTokenizer.from_pretrained(
         model_args.tokenizer_name if model_args.tokenizer_name else model_args.pretrained_name
     )
 
     # datasets
     train_dataset = MultiChoiceDataset(
-        data_root=data_args.data_root,
+        data_files={
+            'context': data_args.context_file,
+            'train': data_args.train_file,
+        },
         split='train',
         tokenizer=tokenizer,
     )
     eval_dataset = MultiChoiceDataset(
-        data_root=data_args.data_root,
+        data_files={
+            'context': data_args.context_file,
+            'valid': data_args.valid_file,
+        },
         split='valid',
         tokenizer=tokenizer
     )

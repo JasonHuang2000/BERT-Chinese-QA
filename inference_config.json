@@ -1,0 +1,19 @@
+{
+    "======== MODEL ARGS ========": null,
+    "cs_pretrained_name": "hfl/chinese-macbert-large",
+    "qa_pretrained_name": "hfl/chinese-macbert-large",
+    "cs_tokenizer_name": null,
+    "qa_tokenizer_name": null,
+    "cache_dir": null,
+    "cs_ckpt_path": "./cs_ckpt/macbert-large-5epoch",
+    "qa_ckpt_path": "./qa_ckpt/macbert-large-5epoch",
+    "======== DATA ARGS ========": null,
+    "context_file": "./data/context.json",
+    "train_file": "./data/train.json",
+    "valid_file": "./data/valid.json",
+    "test_file": "./data/test.json",
+    "output_file": "./result.csv",
+    "max_len": 384,
+    "pad_to_max_len": true,
+    "doc_stride": 128
+}
