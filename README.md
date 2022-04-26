@@ -24,10 +24,10 @@ Two files `train.json` and `valid.json` should be provided for training. The `JS
         "id": "9f0860355c55e113d615cc88b3fa9420",
         "question": "伊利諾大學是哪一個國家的大學?",
         "paragraphs": [
-        6037,
-        4555,
-        5641,
-        1029
+            6037,
+            4555,
+            5641,
+            1029
         ],
         "relevant": 4555,
         "answer": {
