@@ -3,3 +3,4 @@ tqdm
 numpy
 transformer==4.17.0
 datasets==2.0.0
+tensorboard==2.8.0

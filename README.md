@@ -77,6 +77,16 @@ python3 qa_train.py qa_config.json
 
 You can also modify `qa_config.json` for different training configuration.
 
+### Logging
+
+`tensorboard` can be used for logging illustration.
+
+```bash
+tensorboard --logdir [logging directory]
+```
+
+The default logging directory is `[task]_output/runs/[current datetime]_[hostname]`.
+
 ## Testing
 
 ### Pretrained Checkpoints
